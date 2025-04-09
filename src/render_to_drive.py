@@ -15,7 +15,7 @@ def get_google_drive_folder_id():
 # Authenticate with Google Drive API
 def authenticate_google_drive():
     credentials = Credentials.from_service_account_file(
-        "C:\Users\eligp\AppData\Roaming\gspread\credentials.json",
+        "C:\\Users\\eligp\\AppData\\Roaming\\gspread\\credentials.json",
         scopes=["https://www.googleapis.com/auth/drive.file"]
     )
     return build("drive", "v3", credentials=credentials)
